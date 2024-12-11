@@ -33,5 +33,6 @@ jobs:
       env:
         LUOGU_UID: ${{ secrets.LUOGU_UID }}
         LUOGU_CLIENT_ID: ${{ secrets.LUOGU_CLIENT_ID }}
+        LUOGU_C3VK: ${{ secrets.LUOGU_C3VK }}
       run: |
-        python punch_luogu.py $LUOGU_UID $LUOGU_CLIENT_ID
+        python punch_luogu.py $LUOGU_UID $LUOGU_CLIENT_ID $LUOGU_C3VK
