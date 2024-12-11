@@ -25,6 +25,7 @@ def punch(cookie):
 if __name__ == "__main__":
     uid = os.getenv('LUOGU_UID')  # 从环境变量中获取 uid
     client_id = os.getenv('LUOGU_CLIENT_ID')  # 从环境变量中获取 client_id
-    cookie = "__client_id=" + client_id + ";_uid=" + uid + ";"  # 构造 Cookie
+    c3vk = os.getenv('LUOGU_C3VK')  # 从环境变量中获取 client_id
+    cookie = "__client_id=" + client_id + ";_uid=" + uid + ";_C3VK=" + c3vk + ";"  # 构造 Cookie
     result = punch(cookie)  # 发起签到请求
     print(result)  # 输出签到结果
